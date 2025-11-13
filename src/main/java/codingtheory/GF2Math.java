@@ -12,6 +12,9 @@ interface GF2 {
     // for matrices
     int[] vectorMatrixMultiply(int[] vector, int[][] matrix);
     int[][] transpose(int[][] matrix);
+
+    // create an identity matrix of n*n
+    int[][] createIdentityMatrix(int n);
 }
 
 public class GF2Math implements GF2 {
@@ -69,4 +72,13 @@ public class GF2Math implements GF2 {
         }
         return transposed;
     }
+    @Override
+    public int[][] createIdentityMatrix(int n) {
+        int[][] I = new int[n][n];
+        for(int i=0; i<n; i++) {
+            I[i][i] = 1;
+        }
+        return I;
+    }
 }
+
