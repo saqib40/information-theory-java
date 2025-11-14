@@ -15,6 +15,9 @@ interface GF2 {
 
     // create an identity matrix of n*n
     int[][] createIdentityMatrix(int n);
+
+    // for cyclic
+    int[] polynomialDivide(int[] dividend, int[] divisor);
 }
 
 public class GF2Math implements GF2 {
@@ -79,6 +82,10 @@ public class GF2Math implements GF2 {
             I[i][i] = 1;
         }
         return I;
+    }
+    @Override
+    public int[] polynomialDivide(int[] dividend, int[] divisor) {
+        
     }
 }
 

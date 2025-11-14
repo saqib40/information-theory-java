@@ -5,7 +5,7 @@ package codingtheory;
 
 import java.util.Arrays;
 
-public class Main {
+public class HammingMain {
     public static void main(String[] args) {
         // --- 1. SETUP ---
         // Use p=3, which is the (7,4) Hamming Code
